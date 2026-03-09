@@ -12,7 +12,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello World!")
+	fmt.Println("uwbbcb")
 }
 ```
 ### Output Unguided :
@@ -44,5 +44,4 @@ func main() {
 fatih jelek banget
 
 
-dibaca:
-u diam aja dulu!
+tadi done, untuk mengganti foto ss masing masing soal tinggal ss masukan ke folder output kemudian ganti nama, pastikan pada nama file fotonya sama
