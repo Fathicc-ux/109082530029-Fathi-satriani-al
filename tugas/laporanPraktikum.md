@@ -18,6 +18,31 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/shellyneu/103112430114_Shellyn/blob/main/modul1/output/output-soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas/output/tugas1.png)
 [penjelasan]
+fatih jelek banget
 
+
+
+### 1. [Soal]
+#### tugas1.go
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello World!")
+}
+```
+### Output Unguided :
+
+##### Output 
+![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas/output/tugas2.png)
+[penjelasan]
+fatih jelek banget
+
+
+dibaca:
+u diam aja dulu!
