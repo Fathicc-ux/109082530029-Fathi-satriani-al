@@ -4,7 +4,7 @@
 ## Unguided 
 
 ### 1. [Soal]
-#### tugas1.go
+#### soal1.go
 
 ```go
 package main
@@ -12,10 +12,8 @@ package main
 import "fmt"
 
 func main() {
-	var (
-satu, dua, tiga string
-temp string
-)
+	var (satu, dua, tiga string
+	temp string)
 fmt.Print("Masukan input string: ")
 fmt.Scanln(&satu)
 fmt.Print("Masukan input string: ")
@@ -33,7 +31,7 @@ fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas/output/tugas1.png)
+![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas/output/soal1.png)
 [penjelasan]
 fatih jelek banget
 
