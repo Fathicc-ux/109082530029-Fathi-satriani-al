@@ -78,23 +78,34 @@ package main
 import "fmt"
 
 func main() {
-	var w1, w2, w3, w4 string
-	var berhasil bool
-	berhasil = true
+	var parsel, biaya, Rp, total int
 
-	for i:= 1; i <= 5; i++{
-		fmt.Scan(&w1, &w2, &w3, &w4)
-		fmt.Println("Percobaan ", i, ":", w1, " ", w2, " ", w3, " ", w4, " ")
-		if w1 != "merah" || w2 != "kuning" || w3 != "hijau" || w4 != "ungu"{
-			berhasil = false
-		}
+	fmt.Print("Berat parsel (gram): ")
+	fmt.Scan(&parsel)
+
+	kg := parsel / 1000
+	detail_berat:= parsel % 1000
+	fmt.Println("Detail berat: ", kg, "kg", "+" ,detail_berat, "gram")
+	Rp = kg * 10000
+
+	if parsel > 10000{
+		biaya = 0
+	}else  if detail_berat >= 500{
+		biaya = 5 * detail_berat 
+	}else {
+		biaya = 15 * detail_berat
 	}
-	fmt.Print("Berhasil: ", berhasil)
+	fmt.Println("Detail biaya: ", "Rp. ", Rp, " + ", "Rp. ", biaya)
+
+	total = Rp + biaya
+
+	fmt.Print("Total biaya: ","Rp. ", total)
 }
 ```
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas/output/soal2.png)
+![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas/output/soal3.png)
 [penjelasan]
-program digunakan untuk memberikan nilai kebenaran, Output akan bernilai TRUE saat kita input sesuai urutan warna pada setiap
+program digunakan untuk menghitung biaya kirim berdasarkan berat barang, biaya jasa 10.000/kg. Jika sisa berat tidak kurang dari 500 gr dikenakan biaya tambahan Rp.5/gr, tapi jika kurang dari 500gr biaya tambahan Rp.15/gr nya dan gratis apabila total berat lebih dari 10.000
+contoh input: 8.500, sisa berat 500gr karena satuannya kg dan sisanya gr, karena sisa berat tidak kurang dari 500gr maka biaya tambahannya Rp.5/ gr = 500 * Rp. 5 = 2.500. Total nya makan 80.000 + 2.500 = 82.500
