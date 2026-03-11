@@ -66,7 +66,35 @@ func main() {
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas/output/soal2.png)
 [penjelasan]
-fatih jelek banget
+program digunakan untuk memberikan nilai kebenaran, Output akan bernilai TRUE saat kita input sesuai urutan warna pada setiap percobaan dan akan bernilai FALSE saat ada 1 percobaan yang input warnanya tidak sesuai urutan. yang dimana urutan warna nya adalah: merah kuning hijau ungu, bisa dilihat di output pada percobaan pertama bernilai TRUE dan FALSE pada percobaan kedua karena input pada baris pertama adalah: ungu hijau kuning merah, walaupun ke empat percobaan urut tetapi saat ada 1 percobaan yang warnannya tidak urut maka akan bernilai FALSE
 
 
-tadi done, untuk mengganti foto ss masing masing soal tinggal ss masukan ke folder output kemudian ganti nama, pastikan pada nama file fotonya sama
+### 2. [Soal]
+#### soal3.go
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var w1, w2, w3, w4 string
+	var berhasil bool
+	berhasil = true
+
+	for i:= 1; i <= 5; i++{
+		fmt.Scan(&w1, &w2, &w3, &w4)
+		fmt.Println("Percobaan ", i, ":", w1, " ", w2, " ", w3, " ", w4, " ")
+		if w1 != "merah" || w2 != "kuning" || w3 != "hijau" || w4 != "ungu"{
+			berhasil = false
+		}
+	}
+	fmt.Print("Berhasil: ", berhasil)
+}
+```
+### Output Unguided :
+
+##### Output 
+![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas/output/soal2.png)
+[penjelasan]
+program digunakan untuk memberikan nilai kebenaran, Output akan bernilai TRUE saat kita input sesuai urutan warna pada setiap
