@@ -69,7 +69,7 @@ func main() {
 program digunakan untuk memberikan nilai kebenaran, Output akan bernilai TRUE saat kita input sesuai urutan warna pada setiap percobaan dan akan bernilai FALSE saat ada 1 percobaan yang input warnanya tidak sesuai urutan. yang dimana urutan warna nya adalah: merah kuning hijau ungu, bisa dilihat di output pada percobaan pertama bernilai TRUE dan FALSE pada percobaan kedua karena input pada baris pertama adalah: ungu hijau kuning merah, walaupun ke empat percobaan urut tetapi saat ada 1 percobaan yang warnannya tidak urut maka akan bernilai FALSE
 
 
-### 2. [Soal]
+### 3. [Soal]
 #### soal3.go
 
 ```go
