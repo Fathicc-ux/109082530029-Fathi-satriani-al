@@ -33,7 +33,8 @@ fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas/output/soal1.png)
 [penjelasan]
-fatih jelek banget
+Program meminta input sebanyak 3 kali, yang dimana output awal hasilnya sama dengan input kesatu kedua dan ketiga
+untuk output akhir berbeda dengan output awal yang dimana setiap inputannya diubah, contoh satu = dua, dua = tiga, tiga = temp dan  temp = 1. Inputan saya di program adalah (satu, dua, dan tiga) output awal = satu dua tiga, output akhir = dua tiga satu. Kenapa tiga = satu? padahal tiga = temp, karena itu sudah dirubah yang awalnya temp dirubah menjadi satu
 
 
 
