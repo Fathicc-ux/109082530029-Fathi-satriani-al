@@ -3,7 +3,9 @@
 
 ## Unguided 
 
-### 1. [Soal]
+### 1. [Telusuri program berikut dengan cara mengkompilasi dan mengeksekusi program. Silakan
+masukan data yang sesuai sebanyak yang diminta program. Perhatikan keluaran yang
+diperoleh. Coba terangkan apa sebenarnya yang dilakukan program tersebut?]
 #### soal1.go
 
 ```go
@@ -38,7 +40,16 @@ untuk output akhir berbeda dengan output awal yang dimana setiap inputannya diub
 
 
 
-### 2. [Soal]
+### 2. [Siswa kelas IPA di salah satu sekolah menengah atas di Indonesia sedang mengadakan
+praktikum kimia. Di setiap percobaan akan menggunakan 4 tabung reaksi, yang mana
+susunan warna cairan di setiap tabung akan menentukan hasil percobaan. Siswa diminta
+untuk mencatat hasil percobaan tersebut. Percobaan dikatakan berhasil apabila susunan
+warna zat cair pada gelas 1 hingga gelas 4 secara berturutan adalah ‘merah’, ‘kuning’,
+‘hijau’, dan ‘ungu’ selama 5 kali percobaan berulang.
+Buatlah sebuah program yang menerima input berupa warna dari ke 4 gelas reaksi
+sebanyak 5 kali percobaan. Kemudian program akan menampilkan true apabila urutan
+warna sesuai dengan informasi yang diberikan pada paragraf sebelumnya, dan false
+untuk urutan warna lainnya.]
 #### soal2.go
 
 ```go
@@ -69,7 +80,14 @@ func main() {
 program digunakan untuk memberikan nilai kebenaran, Output akan bernilai TRUE saat kita input sesuai urutan warna pada setiap percobaan dan akan bernilai FALSE saat ada 1 percobaan yang input warnanya tidak sesuai urutan. yang dimana urutan warna nya adalah: merah kuning hijau ungu, bisa dilihat di output pada percobaan pertama bernilai TRUE dan FALSE pada percobaan kedua karena input pada baris pertama adalah: ungu hijau kuning merah, walaupun ke empat percobaan urut tetapi saat ada 1 percobaan yang warnannya tidak urut maka akan bernilai FALSE
 
 
-### 3. [Soal]
+### 3. [PT POS membutuhkan aplikasi perhitungan biaya kirim berdasarkan berat parsel. Maka,
+buatlah program BiayaPos untuk menghitung biaya pengiriman tersebut dengan ketentuan
+sebagai berikut!
+Dari berat parsel (dalam gram), harus dihitung total berat dalam kg dan sisanya (dalam
+gram). Biaya jasa pengiriman adalah Rp. 10.000,- per kg. Jika sisa berat tidak kurang dari 500
+gram, maka tambahan biaya kirim hanya Rp. 5,- per gram saja. Tetapi jika kurang dari 500
+gram, maka tambahan biaya akan dibebankan sebesar Rp. 15,- per gram. Sisa berat (yang
+kurang dari 1kg) digratiskan biayanya apabila total berat ternyata lebih dari 10kg.]
 #### soal3.go
 
 ```go
