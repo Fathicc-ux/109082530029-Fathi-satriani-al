@@ -126,4 +126,4 @@ func main() {
 ![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas/output/soal3.png)
 [penjelasan]
 program digunakan untuk menghitung biaya kirim berdasarkan berat barang, biaya jasa 10.000/kg. Jika sisa berat tidak kurang dari 500 gr dikenakan biaya tambahan Rp.5/gr, tapi jika kurang dari 500gr biaya tambahan Rp.15/gr nya dan gratis apabila total berat lebih dari 10.000
-contoh input: 8.500, sisa berat 500gr karena satuannya kg dan sisanya gr, karena sisa berat tidak kurang dari 500gr maka biaya tambahannya Rp.5/ gr = 500 * Rp. 5 = 2.500. Total nya makan 80.000 + 2.500 = 82.500
+contoh input: 8.500, sisa berat 500gr karena satuannya kg dan sisanya gr, karena sisa berat tidak kurang dari 500gr maka biaya tambahannya Rp.5/ gr =, 500 * Rp. 5 = 2.500. Total nya maka 80.000 + 2.500 =82.500
