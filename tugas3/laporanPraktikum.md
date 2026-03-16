@@ -41,7 +41,7 @@ func main () {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas3/output/Soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas3/output_tugas3/Soal1.png)
 [penjelasan]
 blablablablablabla
 
