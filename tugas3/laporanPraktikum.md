@@ -3,8 +3,11 @@
 
 ## Unguided 
 
-### 1. [Menukar nilai]
-Telusuri 
+### 1. [Faktorial, Permutasi, Kombinasi]
+Minggu ini, mahasiswa Fakultas Informatika mendapatkan tugas dari mata kuliah matematika
+diskrit untuk mempelajari kombinasi dan permutasi. Jonas salah seorang mahasiswa, iseng
+untuk mengimplementasikannya ke dalam suatu program. Oleh karena itu bersediakah kalian
+membantu Jonas? (tidak tentunya ya :p)
 #### Soal1.go
 
 ```go
@@ -12,29 +15,35 @@ package main
 
 import "fmt"
 
-func main() {
-	var (satu, dua, tiga string
-	temp string)
-fmt.Print("Masukan input string: ")
-fmt.Scanln(&satu)
-fmt.Print("Masukan input string: ")
-fmt.Scanln(&dua)
-fmt.Print("Masukan input string: ")
-fmt.Scanln(&tiga)
-fmt.Println("Output awal = " + satu + " " + dua + " " + tiga)
-temp = satu
-satu = dua
-dua = tiga
-tiga = temp
-fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
+func faktorial(n int)int{
+	hasil:= 1
+	for i:=1; i<=n; i++{
+		hasil = hasil * i
+	}
+	return hasil
+}
+func permutasi(n, r int)int{
+	hasil := faktorial(n)/faktorial(n-r)
+	return hasil
+}
+func kombinasi(n, r int)int{
+	hasil := faktorial(n) / ((faktorial(r) * faktorial(n-r)))
+	return hasil
+}
+func main () {
+	var a, b, c, d int
+
+	fmt.Scan(&a, &b, &c, &d)
+	fmt.Println("Baris 1: ", permutasi(a, c), kombinasi(a, c))
+	fmt.Println("Baris 2: ", permutasi(b, d), kombinasi(b, d))
 }
 ```
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas/output/soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas3/output/Soal1.png)
 [penjelasan]
-Program meminta input sebanyak 3 kali, yang dimana output awal hasilnya sama dengan input kesatu 
+blablablablablabla
 
 
 ### 2. [praktikum kimia]
