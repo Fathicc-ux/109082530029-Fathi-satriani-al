@@ -7,9 +7,9 @@
 Minggu ini, mahasiswa Fakultas Informatika mendapatkan tugas dari mata kuliah matematika
 diskrit untuk mempelajari kombinasi dan permutasi. Jonas salah seorang mahasiswa, iseng
 untuk mengimplementasikannya ke dalam suatu program. Oleh karena itu bersediakah kalian
-membantu Jonas? (tidak tentunya ya :p)
+membantu Jonas? (tidak tentunya ya :p) 
 Masukan: terdiri dari empat buah bilangan asli a, b, c, dan d yang dipisahkan oleh spasi,
-dengan syarat a ≥ c dan b ≥ d.
+dengan syarat a ≥ c dan b ≥ d. 
 Keluaran: terdiri dari dua baris. Baris pertama adalah hasil permutasi dan kombinasi a
 terhadap c, sedangkan baris kedua adalah hasil permutasi dan kombinasi b terhadap d.
 #### Soal1.go
@@ -52,8 +52,8 @@ blablablablablabla
 
 ### 2. [Fungsi Komposisi]
 Diberikan tiga buah fungsi matematika yaitu f (x) = x * x, g (x) = x − 2 dan h (x) = x +1 . Fungsi komposisi (fogoh)(x) artinya adalah f(g(h(x))). Tuliskan f(x), g(x) dan h(x)
-dalam bentuk function.
-Masukan: terdiri dari sebuah bilangan bulat a, b dan c yang dipisahkan oleh spasi.
+dalam bentuk function. 
+Masukan: terdiri dari sebuah bilangan bulat a, b dan c yang dipisahkan oleh spasi. 
 Keluaran: terdiri dari tiga baris. Baris pertama adalah (fogoh)(a), baris kedua (gohof)(b),
 dan baris ketiga adalah (hofog)(c)!
 #### Soal2.go
@@ -96,11 +96,11 @@ program
 ### 3. [Titik Lingkaran]
 Suatu lingkaran didefinisikan dengan koordinat titik pusat (cx, cy) dengan radius
 r. Apabila diberikan dua buah lingkaran, maka tentukan posisi sebuah titik sembarang (x, y)
-berdasarkan dua lingkaran tersebut.
+berdasarkan dua lingkaran tersebut. 
 Masukan: terdiri dari beberapa tiga baris. Baris pertama dan kedua adalah koordinat titik pusat
 dan radius dari lingkaran 1 dan lingkaran 2, sedangkan baris ketiga adalah koordinat titik
 sembarang. Asumsi sumbu x dan y dari semua titik dan juga radius direpresentasikan dengan
-bilangan bulat.
+bilangan bulat. 
 Keluaran: berupa string yang menyatakan posisi titik "Titik di dalam lingkaran 1 dan 2", "Titik
 di dalam lingkaran 1", "Titik di dalam lingkaran 2", atau "Titik di luar lingkaran 1 dan 2".
 #### Soal3.go
