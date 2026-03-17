@@ -1,5 +1,5 @@
-# <h1 align="center">Laporan Praktikum Modul 3 - ... </h1>
-<p align="center">[Fathi satriani Al jauzy] - [109082530029]</p>
+# <h1 align="center">Laporan Praktikum Modul 3 </h1>
+<p align="center">[Fathi Satriani Al jauzy] - [109082530029]</p>
 
 ## Unguided 
 
