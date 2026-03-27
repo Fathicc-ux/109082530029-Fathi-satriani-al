@@ -129,4 +129,4 @@ func main() {
 ![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas4/output_tugas4/Soal2.png)
 [penjelasan]
 program ini digunakan untuk menghitung jumlah soal dan waktu dari setiap peserta kompetisi. Setiap soal akan di periksa, apabila waktu selesai <=300 detik maka akan dihitung jika lebih tidak di hitung. Pemenang ditentukan oleh banyak soal yang dikerjakan, jika banyak soal yang dikerjakan sama maka dihitung dari waktu yang tercepat. func hitungskor terdapat parameter *soal untuk menyimpan jumlah soal dan *skor untuk menyimpan waktu, lalu masuk ke if jika <= 300 soal + 1 dan skor waktu
-lalu program meminta input 2 peserta dengan format: nama, jumlah soal, skor(waktu). Lalu pemenangnya di tentukan
+lalu program meminta input 2 peserta dengan format: nama, jumlah soal, skor(waktu). Lalu pemenangnya di tentukan dari banyaknya soal yang di kerjakan, jika jumlahnya sama maka dihitung dari yang tercepat.
