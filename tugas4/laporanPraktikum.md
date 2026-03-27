@@ -3,7 +3,7 @@
 
 ## Unguided 
 
-### 1. [Faktorial, Permutasi, Kombinasi dengan prosedure]
+### 1. [Faktorial, Permutasi, Kombinasi dengan prosedur]
 Minggu ini, mahasiswa Fakultas Informatika mendapatkan tugas dari mata kuliah matematika
 diskrit untuk mempelajari kombinasi dan permutasi. Jonas salah seorang mahasiswa, iseng
 untuk mengimplementasikannya ke dalam suatu program. Oleh karena itu bersediakah kalian
@@ -58,14 +58,28 @@ func main () {
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas4/output_tugas4/Soal1.png)
 [penjelasan]
-Program
+Program ini dibuat untuk menghitung faktorial, permutasi, dan kombinasi menggunakan prosedur.
+Di dalam program ini terdapat tiga prosedur, yaitu faktorial, permutasi, dan kombinasi.
+pada prosedur faktorial, terdapat input n dan parameter hasil. Parameter hasil digunakan untuk menyimpan nilai faktorial dari n. prosedur permutasi, terdapat input n dan r, serta parameter hasil. Di sini digunakan variabel tambahan yaitu nf dan fn. Variabel nf digunakan untuk menyimpan nilai n!, sedangkan fn untuk menyimpan (n-r)!. prosedur kombinasi, terdapat input n dan r, serta parameter hasil. Di sini saya menggunakan variabel tambahan yaitu nf, nr dan fn. Variabel nf digunakan untuk menyimpan nilai n!, nr untuk menyimpan nilai r!, sedangkan fn untuk menyimpan (n-r)!.
+program akan menginput 4 angka a, b, c, dan d. Kemudian dibuat variabel baru untuk hasil permutasi dan kombinasi. Panggil prosedur dan simpan hasilnya ke variabel baru yang sudah dibuat, setelah itu tinggal print variabel baru yang digunakan untuk menyimpan prosedur permutasi dan kombinasi
 
-### 2. [Fungsi Komposisi]
-Diberikan tiga buah fungsi matematika yaitu f (x) = x * x, g (x) = x − 2 dan h (x) = x +1 . Fungsi komposisi (fogoh)(x) artinya adalah f(g(h(x))). Tuliskan f(x), g(x) dan h(x)
-dalam bentuk function. 
-Masukan: terdiri dari sebuah bilangan bulat a, b dan c yang dipisahkan oleh spasi. 
-Keluaran: terdiri dari tiga baris. Baris pertama adalah (fogoh)(a), baris kedua (gohof)(b),
-dan baris ketiga adalah (hofog)(c)!
+### 2. [Program untuk mencari pemenang dengan prosedur]
+Kompetisi pemrograman tingkat nasional berlangsung ketat. Setiap peserta diberikan 8 soal
+yang harus dapat diselesaikan dalam waktu 5 jam saja. Peserta yang berhasil menyelesaikan
+soal paling banyak dalam waktu paling singkat adalah pemenangnya.
+Buat program gema yang mencari pemenang dari daftar peserta yang diberikan. Program
+harus dibuat modular, yaitu dengan membuat prosedur hitungSkor yang mengembalikan total
+soal dan total skor yang dikerjakan oleh seorang peserta, melalui parameter formal.
+Pembacaan nama peserta dilakukan di program utama, sedangkan waktu pengerjaan dibaca
+di dalam prosedur.
+prosedure hitungSkor(in/out soal, skor : integer)
+Setiap baris masukan dimulai dengan satu string nama peserta tersebut diikuti dengan adalah
+8 integer yang menyatakan berapa lama (dalam menit) peserta tersebut menyelesaikan soal.
+Jika tidak berhasil atau tidak mengirimkan jawaban maka otomatis dianggap menyelesaikan
+dalam waktu 5 jam 1 menit (301 menit).
+Satu baris keluaran berisi nama pemenang, jumlah soal yang diselesaikan, dan nilai yang
+diperoleh. Nilai adalah total waktu yang dibutuhkan untuk menyelesaikan soal yang berhasil
+diselesaikan.
 #### Soal2.go
 
 ```go
@@ -73,99 +87,46 @@ package main
 
 import "fmt"
 
-func fx(a int)int{
-	hasil:= a * a
-	return hasil
-}
-func gx(a int)int{
-	hasil:= a -2
-	return hasil
-}
-func hx(a int)int{
-	hasil:= a + 1
-	return hasil
+func hitungskor(soal, skor *int){
+    var waktu int
+
+    *soal = 0
+    *skor = 0
+
+    for i := 0; i < 8; i++ {
+        fmt.Scan(&waktu)
+
+        if waktu <= 300 {
+            *soal = *soal + 1
+            *skor = *skor + waktu
+        }
+    }
 }
 func main() {
-	var a, b, c int
-	fmt.Print("Masukan angka: ")
-	fmt.Scan(&a, &b, &c)
-
-	fmt.Println(fx(gx(hx(a))))
-	fmt.Println(gx(hx(fx(b))))
-	fmt.Println(hx(fx(gx(c))))
+  var nama1, nama2 string
+  var soal1, soal2, skor1, skor2 int
+  
+  fmt.Scan(&nama1)
+  hitungskor(&soal1, &skor1)
+  
+  fmt.Scan(&nama2)
+  hitungskor(&soal2, &skor2)
+  
+  if soal1 > soal2{
+      fmt.Println(nama1, soal1, skor1)
+  }else if soal2 > soal1{
+      fmt.Println(nama2, soal2, skor2)
+  }else if skor1 < skor2{
+      fmt.Println(nama1, soal1, skor1)
+  }else{
+      fmt.Println(nama2, soal2, skor2)
+  }
 }
 ```
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas3/output_tugas3/Soal2.png)
+![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas4/output_tugas4/Soal2.png)
 [penjelasan]
-program untuk menghitung fungsi f(x) g(x) h(x), Input 3 bilangan yang nantinya akan masuk di ketiga function tadi.Input 7 2 10 ibaratkan sebagai (a b c) f(g(h(a))), g(h(f(b))), h(f(g(c)))
-7 masuk function h(x) = 7+1 = 8, g(x) = 8-2 = 6, h(x)=6*6= 36.
-2 masuk function f(x) = 2*2 = 4, h(X) = 4+1 = 5, g(x) = 5-2 = 3.
-10 masuk function g(x) = 10-2 = 8, f(X) = 8*8 = 64, h(x) = 64+1 = 65.
-Input 7 2 10 Outputnya 36 3 65
-
-
-### 3. [Titik Lingkaran]
-Suatu lingkaran didefinisikan dengan koordinat titik pusat (cx, cy) dengan radius
-r. Apabila diberikan dua buah lingkaran, maka tentukan posisi sebuah titik sembarang (x, y)
-berdasarkan dua lingkaran tersebut. 
-Masukan: terdiri dari beberapa tiga baris. Baris pertama dan kedua adalah koordinat titik pusat
-dan radius dari lingkaran 1 dan lingkaran 2, sedangkan baris ketiga adalah koordinat titik
-sembarang. Asumsi sumbu x dan y dari semua titik dan juga radius direpresentasikan dengan
-bilangan bulat. 
-Keluaran: berupa string yang menyatakan posisi titik "Titik di dalam lingkaran 1 dan 2", "Titik
-di dalam lingkaran 1", "Titik di dalam lingkaran 2", atau "Titik di luar lingkaran 1 dan 2".
-#### Soal3.go
-
-```go
-package main
-
-import (
-	"fmt"
-	"math"
-)
-
-func jarak(a, b, c ,d float64)float64{
-	hasil:= math.Sqrt((a-c)*(a-c) + (b - d)*(b-d))
-	return hasil
-}
-func dalam(cx, cy, r, x, y float64)bool{
-	if jarak(x, y, cx, cy) <= r{
-		return true
-	}
-	return false
-}
-func main () {
-	var a1, b1, r1 int
-	var a2, b2, r2 int
-	var x, y int
-
-	fmt.Scanln(&a1, &b1, &r1)
-	fmt.Scanln(&a2, &b2, &r2)
-	fmt.Scanln(&x, &y)
-
-	daling1:= dalam(float64(a1), float64(b1), float64(r1), float64(x), float64(y))
-	daling2:= dalam(float64(a2), float64(b2), float64(r2), float64(x), float64(y))
-
-	if daling1 && daling2{
-		fmt.Println("Titik di dalam lingkaran 1 & 2")
-	}else if daling1{
-		fmt.Println("Titik di dalam lingkaran 1")
-	}else if daling2{
-		fmt.Println("Titik di dalam lingkaran 2")
-	}else{
-		fmt.Println("Titik di luar lingkaran 1 & 2")
-	}
-}
-```
-### Output Unguided :
-
-##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas3/output_tugas3/Soal3.png)
-[penjelasan]
-program di gunakan untuk mengecek tiitk 2 lingkaran apakah di dalam atau diluar. Terdapat 2 function Jarak dan Dalam function jarak digunakan untuk menghitung titik ousat dengan x,y sedangkan dalam untuk memberikan nilai kebenaran apakah titik lingkaran diluar atau di dalam. Masuk function Jarak Contoh input Baris 1 = 1 2 3 (1, 2 titik pusat lingkran 1, 3 = radius), Baris 2 = 4 5 6 (4, 5 titik pusat lingkaran 2, 6 = radius), Baris 3 = 7 8 (7, 8 titik yang diuji dengan pusat lingkaran 1 & 2).
-Masuk function jarak hitung lingkaran 1 = akar(7-1 * 7-1) + (8-2 * 8-2) = akar(36+36) = akar72 = 
-8.4, karena jarak lebih dari radius berarti titik lingkaran 1 ada di luar (8.4 > 3)
-Hitung lingkaran 2 = akar(7-4 * 7-4) + (8-5 * 8-5) = akar(9+9) = akar18 = 4.2. Karena jarak kurang dari radius berarti titik lingkaran 2 ada di dalam (4.2 < 6). Masuk function dalam, hasil hitung lingkaran 1 menunjukan titik diluar dan lingkaran 2 di dalam, karena yang benar cuman 1 yaitu lingkaran 2 maka outputnya : "Titik di dalam lingkaran 2"
+program ini digunakan untuk menghitung jumlah soal dan waktu dari setiap peserta kompetisi. Setiap soal akan di periksa, apabila waktu selesai <=300 detik maka akan dihitung jika lebih tidak di hitung. Pemenang ditentukan oleh banyak soal yang dikerjakan, jika banyak soal yang dikerjakan sama maka dihitung dari waktu yang tercepat. func hitungskor terdapat parameter *soal untuk menyimpan jumlah soal dan *skor untuk menyimpan waktu, lalu masuk ke if jika <= 300 soal + 1 dan skor waktu
+lalu program meminta input 2 peserta dengan format: nama, jumlah soal, skor(waktu). Lalu pemenangnya di tentukan
