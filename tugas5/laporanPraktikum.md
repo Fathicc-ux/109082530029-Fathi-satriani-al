@@ -77,7 +77,7 @@ func main() {
 Program ini digunakan untuk menampilkan pola bintang menggunakan fungsi rekursif. Fungsi bintang akan berhenti jika nilai n == 0, fungsi akan terus berjalan dan berhenti saat n == 0 dengan n-1. Contoh input 5 akan berjalan sampai 1 dan berhenti di 0 karen n == 0, Lalu masuk ke perulangan untuk mencetak bintang dimulai dari bintang 1 sampai bintang ke-n
 
 
-### 3. [Titik Lingkaran]
+### 3. [Mencari faktor dengan rekrusif]
 Buatlah program yang mengimplementasikan rekursif untuk menampilkan faktor bilangan dari
 suatu N, atau bilangan yang apa saja yang habis membagi N.
 Masukan terdiri dari sebuah bilangan bulat positif N.
