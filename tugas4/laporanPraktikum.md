@@ -103,24 +103,27 @@ func hitungskor(soal, skor *int){
     }
 }
 func main() {
-  var nama1, nama2 string
+  var nama, pemenang string
   var soal1, soal2, skor1, skor2 int
-  
-  fmt.Scan(&nama1)
-  hitungskor(&soal1, &skor1)
-  
-  fmt.Scan(&nama2)
-  hitungskor(&soal2, &skor2)
-  
-  if soal1 > soal2{
-      fmt.Println(nama1, soal1, skor1)
-  }else if soal2 > soal1{
-      fmt.Println(nama2, soal2, skor2)
-  }else if skor1 < skor2{
-      fmt.Println(nama1, soal1, skor1)
-  }else{
-      fmt.Println(nama2, soal2, skor2)
-  }
+
+  for selesai := false; !selesai;{
+    fmt.Scan(&nama)
+  if nama == "selesai"{
+        selesai = true
+    }else{
+    hitungskor(&soal2, &skor2)
+    }
+    if skor2 > skor1 || (soal2 == soal1 && skor2 < skor1){
+        pemenang = nama
+        soal1 = soal2
+        skor1 = skor2
+    }else if soal2 > soal1{
+        pemenang = nama
+        soal1 = soal2
+        skor1 =  skor2
+        }
+    }
+    fmt.Println(pemenang, soal1, skor1)
 }
 ```
 ### Output Unguided :
@@ -128,5 +131,4 @@ func main() {
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas4/output_tugas4/Soal2.png)
 [penjelasan]
-program ini digunakan untuk menghitung jumlah soal dan waktu dari setiap peserta kompetisi. Setiap soal akan di periksa, apabila waktu selesai <=300 detik maka akan dihitung jika lebih tidak di hitung. Pemenang ditentukan oleh banyak soal yang dikerjakan, jika banyak soal yang dikerjakan sama maka dihitung dari waktu yang tercepat. func hitungskor terdapat parameter *soal untuk menyimpan jumlah soal dan *skor untuk menyimpan waktu, lalu masuk ke if jika <= 300 soal + 1 dan skor waktu
-lalu program meminta input 2 peserta dengan format: nama, jumlah soal, skor(waktu). Lalu pemenangnya di tentukan dari banyaknya soal yang di kerjakan, jika jumlahnya sama maka dihitung dari yang tercepat.
+Program ini dibuat untuk mencari pemenang dari suatu kompetisi, fungsi hitungskor digunakan untuk menghitung jumlah soal yang berhasil dikerjakan dan total waktu (skor) yang diperoleh. Aturan Penentuan pemenang: 1. yang mengerjakan soal lebih banyak akan menjadi pemenang. 2. Jika jumlah soal yang dikerjakan sama, pemenang ditentukan dari waktu yang tercepat (skor yang lebih kecil). Program akan terus berjalan (looping) dan berhenti saat input nama == "selesai", program akan terus membandingkan jumlah soal dan skor peserta yang telah di inputkan jika ada yang lebih sedikit waktu (skor) dan jumlah soalnya sesuai aturan penentuan pemenang maka peserta tersebut yang akan menjadi pemenang. Program akan mencetak nama pemenang, jumlah pemenang dan banyak skor saat input nama == "selesai"

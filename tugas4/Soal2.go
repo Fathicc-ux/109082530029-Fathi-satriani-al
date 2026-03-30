@@ -18,22 +18,25 @@ func hitungskor(soal, skor *int){
     }
 }
 func main() {
-  var nama1, nama2 string
+  var nama, pemenang string
   var soal1, soal2, skor1, skor2 int
-  
-  fmt.Scan(&nama1)
-  hitungskor(&soal1, &skor1)
-  
-  fmt.Scan(&nama2)
-  hitungskor(&soal2, &skor2)
-  
-  if soal1 > soal2{
-      fmt.Println(nama1, soal1, skor1)
-  }else if soal2 > soal1{
-      fmt.Println(nama2, soal2, skor2)
-  }else if skor1 < skor2{
-      fmt.Println(nama1, soal1, skor1)
-  }else{
-      fmt.Println(nama2, soal2, skor2)
-  }
+
+  for selesai := false; !selesai;{
+    fmt.Scan(&nama)
+  if nama == "selesai"{
+        selesai = true
+    }else{
+    hitungskor(&soal2, &skor2)
+    }
+    if skor2 > skor1 || (soal2 == soal1 && skor2 < skor1){
+        pemenang = nama
+        soal1 = soal2
+        skor1 = skor2
+    }else if soal2 > soal1{
+        pemenang = nama
+        soal1 = soal2
+        skor1 =  skor2
+        }
+    }
+    fmt.Println(pemenang, soal1, skor1)
 }
