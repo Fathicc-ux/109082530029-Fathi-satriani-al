@@ -28,15 +28,17 @@ func main() {
 	var t tabnasabah
 	var n, input int
 	var d nasabah
+	var caribank string
+	fmt.Print("jumlah input: ")
 fmt.Scan(&input)
-for i:=0; i<input; i++{
-	fmt.Print("data ke: ", i)
-	fmt.Scanln(&d.id_nasabah)
-	fmt.Scanln(&d.nama)
-	fmt.Scanln(&d.bank)
-	fmt.Scan(&d.norek)
+for i:=1; i<=input; i++{
+
+	fmt.Scan(&d.id_nasabah, &d.nama, &d.bank, &d.norek)
+	fmt.Println("--------")
 
 	addNasabah(&t, &n, d)
 }
-cetak(t, n, "MANDIRI")
+	fmt.Print("Cari Bank: ")
+	fmt.Scan(&caribank)
+cetak(t, n, caribank)
 }

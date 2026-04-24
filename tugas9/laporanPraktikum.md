@@ -56,4 +56,20 @@ package main
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas9/output_tugas9/Soal3.png)
 [penjelasan]
+Program
+
+
+### 4. [Mencari faktor dengan rekrusif]
+Buatlah 
+#### Soal4.go
+
+```go
+package main
+
+```
+### Output Unguided :
+
+##### Output 
+![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas9/output_tugas9/Soal4.png)
+[penjelasan]
 Program 
