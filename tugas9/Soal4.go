@@ -2,29 +2,29 @@ package main
 
 import "fmt"
 
-func array(NMAX *[127] rune, n int){
-	for i:=0; i<n; i++{
-		var kata string
+func array(NMAX *[127] rune, n *int){
+	var kata string
+	i:=0
+	fmt.Print("isi: ")
+	for {
 		fmt.Scan(&kata)
-		NMAX [i] =  rune(kata[0])
+		if kata == "."{
+			break
+		}
+		(*NMAX) [i] =  rune(kata[0])
+		i++
 	}
+	*n = i
 }
-func revrese(NMAX *[127] rune, n int){
-	var a [127] rune
-	for i:=0; i<n; i++{
-		a[i] = NMAX[n-1-i]
-	}
-	for i:= 0; i<n; i++{
-		NMAX[i] = a[i] 
+func balikan(NMAX *[127] rune, n int){
+	fmt.Print("balik: ")
+	for i:=n-1; i>=0; i--{
+		 fmt.Print(string((*NMAX)[i]), " ")
 	}
 }
 func palindrom(NMAX *[127] rune, n int) bool{
-	var a [127] rune
-	for i:=0; i<n; i++{
-		a[i] = (NMAX[n-1-i])
-	}
-	for i:= 0; i<n; i++{
-		if NMAX[i] != a[i]{
+	for i:=0; i<n/2; i++{
+		if(*NMAX)[i] != (*NMAX)[n-1-i]{
 			return false
 		}
 	}
@@ -33,20 +33,18 @@ func palindrom(NMAX *[127] rune, n int) bool{
 func main() {
 	var NMAX [127] rune
 	var n int
-	fmt.Print("n: ")
-	fmt.Scan(&n)
 
-	array(&NMAX, n)
-	fmt.Println("ISI ARRAY:")
+	array(&NMAX, &n)
+	fmt.Print("cetak array: ")
 for i := 0; i < n; i++ {
 	fmt.Print(string(NMAX[i]), " ")
 }
 fmt.Println()
-revrese(&NMAX, n)
+	 balikan(&NMAX, n)
+fmt.Println()
 	if palindrom(&NMAX, n){
 		fmt.Println("Palindrom")
 	}else{
 		fmt.Print("bukan")
 	}
-	
 }
