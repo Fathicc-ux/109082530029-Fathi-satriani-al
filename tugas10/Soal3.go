@@ -36,5 +36,5 @@ func main() {
 
 	hitung(&balita, n)
 	rata_rata:= rata(&balita,n)
-	fmt.Println(rata_rata)
+	fmt.Printf("%.2f\n", rata_rata)
 }
