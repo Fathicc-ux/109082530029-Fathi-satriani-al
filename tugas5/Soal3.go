@@ -15,4 +15,4 @@ func main() {
     fmt.Scan(&n)
 
     faktor(n, 1)
-}
+}   
