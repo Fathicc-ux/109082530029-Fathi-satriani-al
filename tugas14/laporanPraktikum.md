@@ -65,7 +65,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas12/output_tugas12/Soal1.png)
+![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas14/output_tugas14/Soal1.png)
 [penjelasan]
 Program selection sort ini digunakan untuk mengurutkan nilai dari yang terkecil ke terbesar hampir sama seperti mencari nilai ekstrem namun bedanya selection sort bukan sekedar mencari nilai dari terkecil ke terbesar tapi menukar posisi data juga. Pada program ini ada 3 input, pertama input banyak daerah yang dikunjungi, kedua jumlah rumah pada daerah tersebut, 3 nomor rumah pada daerah tersebut. Awal input jumlah daerah setelah itu input banyaknya rumah paada daerah itu lalu input juga nomor rumah sebanyak jumlah rumah, setelah itu eksekusi sorting menggunakan for loop dimana membandingan kedua index array, pada perulangan pertama bandingkan idx:min dan idx:j kalau TRUE maka nilai min = j setelah itu melakukan penukaran posisi data
 
@@ -136,7 +136,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas12/output_tugas12/Soal2.png)
+![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas14/output_tugas14/Soal2.png)
 [penjelasan]
 Program tersebut hampir sama dengan soal nomor 1 bedanya kalau nilai idx ganjil maka akan diurutkan terkecil ke terbesar, jika nilai idx genap maka terbesar ke terkecil, input daerah 1 campuran ganjil genap, daerah 2 ganjil, daerah 3 genap. Bedanya dengan kode program nomor 1 ada dibagian cetaknya saja
 
@@ -208,7 +208,7 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas12/output_tugas12/Soal3.png)
+![Screenshot Output Unguided 1_1](https://github.com/Fathicc-ux/109082530029-Fathi-satriani-al/blob/main/tugas14/output_tugas14/Soal3.png)
 [penjelasan]
 Program ini digunakan untuk mencari nilai median menggunakan bantuan sorting, program akan berhenti sata input -5313. Program akan melakukan sorting saat input = 0, jadi input yang tidak sama dengan 0 itu disimpan variabel arr[data], kalau input = 0 maka akan dilakukan sorting, sortingnya data yang mana bang? yang di sorting data yang diinputkan sebelum input = 0, nah setelah melakukan sorting lalu tentukan nilai mediannya dengan 2 cara, jika jumlah data ganjil. Median = jumlah data dibagi 2 maka ketemu nilai tengahnya tinggal di cetak nilai index nya, kalau genap beda karena nilai tengahnya ada 2 maka nilai idx kiri + nilai idx kanan lalu di bagi 2
 
